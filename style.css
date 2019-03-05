@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Nunito, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: rgb(11, 11, 29);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#left-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22%;
+  background: rgb(247, 245, 245);
+  z-index: 3;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-links a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links a i {
+  font-size: 0.7rem;
+  align-self: center;
+  margin-left: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+#active { 
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#active > i {
+  transform: rotateZ(180deg);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  background: rgb(10, 89, 153);
+  color: white;
+}
+
+.nav-links a:hover > i {
+  transform: rotateZ(180deg);
+  color: rgb(255, 255, 255);
+}
+
+#right-container {
+  background-image: url(https://flipwallpapers.com/wallpapers/abstract-wallpapers-hd-resolution-For-desktop-Wallpaper.png);
+  background-size: cover;
+  filter: contrast(160%);
+  width: 78%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#right-container::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(43, 160, 255);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+#project-showcase-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+#left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+#right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+#greeting {
+  z-index: 2;
+}
+
+#greeting h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem; 
+}
+
+#greeting p {
+  font-size: 0.98rem;
+}
+
+.project-card {
+  display: flex;
+  width: 700px;
+  height: 300px;
+  margin-top: 50px;
+  background: white;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+#card-left-container {
+  width: 28%;
+  background-image: url(https://www.mf2c-project.eu/wp-content/uploads/2018/06/cropped-mf2c-project-eu-header-1.jpg);
+  background-size: cover;
+}
+
+#card-right-container {
+  width: 72%;
+  padding: 15px;
+}
+
+#project-title h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#project-description p {
+  font-size: 1.2rem;
+}
+
+#content-container-about h1, #content-container-contact h1 {
+  font-size: 1.5rem;
+}
